@@ -1,0 +1,109 @@
+﻿/*Slide Image and caption*/
+*{padding:0; margin:0;}
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+img{
+	max-width:100%;
+	min-width:960px;
+	/*Image Height*/
+	height:371px;
+}
+.cycle-slideshow{
+	width:100%;
+	max-width:960px;
+	display:block;
+	position:relative;
+	margin:20px auto;
+	overflow:hidden;
+}
+.slide{
+	display:block;
+	position:relative;
+	width:100%;
+}
+.caption{
+	width:100%;
+	display:block;
+	position:absolute;
+	/*for bottom display bottom:20px	for right display right:0px 	for left display left:0px*/
+	top:0px;
+	padding:25px;
+	z-index:999;
+	box-sizing:border-box;
+}
+.caption h3{
+	text-transform:uppercase; 
+	color:#FFFFFF; 
+	font-size: .9em, 
+	letter-spacing: .1em;
+	padding-bottom:10px;
+}
+.caption p{
+	color:#FFFFFF; 
+	font-size: .9em; 
+	letter-spacing: .1em;
+	padding-bottom:10px;
+}
+.caption p a {
+	text-decoration:none;
+	color:#FFFFFF;
+	font-size: .8em;
+	border:1px solid #FFFFFF;
+	padding: 2px 8px;
+}
+.caption p a:hover{
+	background:#FFFFFF;
+	color:#333333;
+}
+/*Slider Image and caption ends*/
+/*Control style Starts*/
+.cycle-next{
+	width:0; height:0;
+	display:block;
+	position:absolute;
+	top:20px; right:20px;
+	border-left:25px solid #FFFFFF;
+	border-top:20px solid transparent;
+	border-bottom:20px solid transparent;
+	z-index:99999;
+	cursor:pointer;
+}
+.cycle-prev{
+	width:0; height:0;
+	display:block;
+	position:absolute;
+	top:140px; right:20px;
+	border-right:25px solid #FFFFFF;
+	border-top:20px solid transparent;
+	border-bottom:20px solid transparent;
+	z-index:99999;
+	cursor:pointer;
+}
+.cycle-pager{
+	text-indent:-99999999px;
+	white-space:nowrap;
+	width:30px;
+	text-align:center;
+	position:absolute;
+	display:block;
+	top:50px;
+	right:17px;
+	z-index:99999;
+	color:#FFFFFF;
+}
+.cycle-pager span{
+	width:31px;
+	height:3px;
+	display:block;
+	background:rgba(255,255,255,0.50);
+	transform:rotate(-39deg);
+	-webkit-transform:rotate(-39deg);
+	margin:10px 0;
+	cursor:pointer;
+}
+.cycle-pager .cycle-pager-active{
+	background:#FFFFFF;
+}
+
+/*Control style Ends*/
