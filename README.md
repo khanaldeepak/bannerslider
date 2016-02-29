@@ -31,7 +31,7 @@ Add url inside 'link' field to navigate
 Add Text to Display on button inside 'link_text' field
 Add Title Text to display inside 'title' field
 Add texts inside 'text' field to display as a brief paragraph
-Added By Author
+Added By Author "Sami"
 
 
 
